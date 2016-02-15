@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150F08691C7294F600709858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08681C7294F600709858 /* AppDelegate.swift */; };
+		150F086B1C7294F600709858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F086A1C7294F600709858 /* ViewController.swift */; };
+		150F086E1C7294F600709858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150F086C1C7294F600709858 /* Main.storyboard */; };
+		150F08701C7294F600709858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150F086F1C7294F600709858 /* Assets.xcassets */; };
+		150F08731C7294F600709858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150F08711C7294F600709858 /* LaunchScreen.storyboard */; };
+		150F087E1C7294F600709858 /* NewTelegraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F087D1C7294F600709858 /* NewTelegraphTests.swift */; };
+		150F08891C7294F600709858 /* NewTelegraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08881C7294F600709858 /* NewTelegraphUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		150F087A1C7294F600709858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150F085D1C7294F600709858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150F08641C7294F600709858;
+			remoteInfo = NewTelegraph;
+		};
+		150F08851C7294F600709858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150F085D1C7294F600709858 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150F08641C7294F600709858;
+			remoteInfo = NewTelegraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		150F08651C7294F600709858 /* NewTelegraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTelegraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150F08681C7294F600709858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		150F086A1C7294F600709858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		150F086D1C7294F600709858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		150F086F1C7294F600709858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		150F08721C7294F600709858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		150F08741C7294F600709858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150F08791C7294F600709858 /* NewTelegraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTelegraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		150F087D1C7294F600709858 /* NewTelegraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTelegraphTests.swift; sourceTree = "<group>"; };
+		150F087F1C7294F600709858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150F08841C7294F600709858 /* NewTelegraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewTelegraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		150F08881C7294F600709858 /* NewTelegraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTelegraphUITests.swift; sourceTree = "<group>"; };
+		150F088A1C7294F600709858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		150F08621C7294F600709858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150F08761C7294F600709858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150F08811C7294F600709858 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		150F085C1C7294F600709858 = {
+			isa = PBXGroup;
+			children = (
+				150F08671C7294F600709858 /* NewTelegraph */,
+				150F087C1C7294F600709858 /* NewTelegraphTests */,
+				150F08871C7294F600709858 /* NewTelegraphUITests */,
+				150F08661C7294F600709858 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		150F08661C7294F600709858 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				150F08651C7294F600709858 /* NewTelegraph.app */,
+				150F08791C7294F600709858 /* NewTelegraphTests.xctest */,
+				150F08841C7294F600709858 /* NewTelegraphUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		150F08671C7294F600709858 /* NewTelegraph */ = {
+			isa = PBXGroup;
+			children = (
+				150F08681C7294F600709858 /* AppDelegate.swift */,
+				150F086A1C7294F600709858 /* ViewController.swift */,
+				150F086C1C7294F600709858 /* Main.storyboard */,
+				150F086F1C7294F600709858 /* Assets.xcassets */,
+				150F08711C7294F600709858 /* LaunchScreen.storyboard */,
+				150F08741C7294F600709858 /* Info.plist */,
+			);
+			path = NewTelegraph;
+			sourceTree = "<group>";
+		};
+		150F087C1C7294F600709858 /* NewTelegraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				150F087D1C7294F600709858 /* NewTelegraphTests.swift */,
+				150F087F1C7294F600709858 /* Info.plist */,
+			);
+			path = NewTelegraphTests;
+			sourceTree = "<group>";
+		};
+		150F08871C7294F600709858 /* NewTelegraphUITests */ = {
+			isa = PBXGroup;
+			children = (
+				150F08881C7294F600709858 /* NewTelegraphUITests.swift */,
+				150F088A1C7294F600709858 /* Info.plist */,
+			);
+			path = NewTelegraphUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		150F08641C7294F600709858 /* NewTelegraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150F088D1C7294F600709858 /* Build configuration list for PBXNativeTarget "NewTelegraph" */;
+			buildPhases = (
+				150F08611C7294F600709858 /* Sources */,
+				150F08621C7294F600709858 /* Frameworks */,
+				150F08631C7294F600709858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewTelegraph;
+			productName = NewTelegraph;
+			productReference = 150F08651C7294F600709858 /* NewTelegraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		150F08781C7294F600709858 /* NewTelegraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150F08901C7294F600709858 /* Build configuration list for PBXNativeTarget "NewTelegraphTests" */;
+			buildPhases = (
+				150F08751C7294F600709858 /* Sources */,
+				150F08761C7294F600709858 /* Frameworks */,
+				150F08771C7294F600709858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150F087B1C7294F600709858 /* PBXTargetDependency */,
+			);
+			name = NewTelegraphTests;
+			productName = NewTelegraphTests;
+			productReference = 150F08791C7294F600709858 /* NewTelegraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		150F08831C7294F600709858 /* NewTelegraphUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 150F08931C7294F600709858 /* Build configuration list for PBXNativeTarget "NewTelegraphUITests" */;
+			buildPhases = (
+				150F08801C7294F600709858 /* Sources */,
+				150F08811C7294F600709858 /* Frameworks */,
+				150F08821C7294F600709858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				150F08861C7294F600709858 /* PBXTargetDependency */,
+			);
+			name = NewTelegraphUITests;
+			productName = NewTelegraphUITests;
+			productReference = 150F08841C7294F600709858 /* NewTelegraphUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		150F085D1C7294F600709858 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ridiculous Innovations";
+				TargetAttributes = {
+					150F08641C7294F600709858 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					150F08781C7294F600709858 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 150F08641C7294F600709858;
+					};
+					150F08831C7294F600709858 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 150F08641C7294F600709858;
+					};
+				};
+			};
+			buildConfigurationList = 150F08601C7294F600709858 /* Build configuration list for PBXProject "NewTelegraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 150F085C1C7294F600709858;
+			productRefGroup = 150F08661C7294F600709858 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				150F08641C7294F600709858 /* NewTelegraph */,
+				150F08781C7294F600709858 /* NewTelegraphTests */,
+				150F08831C7294F600709858 /* NewTelegraphUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		150F08631C7294F600709858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F08731C7294F600709858 /* LaunchScreen.storyboard in Resources */,
+				150F08701C7294F600709858 /* Assets.xcassets in Resources */,
+				150F086E1C7294F600709858 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150F08771C7294F600709858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150F08821C7294F600709858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		150F08611C7294F600709858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F086B1C7294F600709858 /* ViewController.swift in Sources */,
+				150F08691C7294F600709858 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150F08751C7294F600709858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F087E1C7294F600709858 /* NewTelegraphTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		150F08801C7294F600709858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150F08891C7294F600709858 /* NewTelegraphUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		150F087B1C7294F600709858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150F08641C7294F600709858 /* NewTelegraph */;
+			targetProxy = 150F087A1C7294F600709858 /* PBXContainerItemProxy */;
+		};
+		150F08861C7294F600709858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150F08641C7294F600709858 /* NewTelegraph */;
+			targetProxy = 150F08851C7294F600709858 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		150F086C1C7294F600709858 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150F086D1C7294F600709858 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		150F08711C7294F600709858 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				150F08721C7294F600709858 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		150F088B1C7294F600709858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		150F088C1C7294F600709858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		150F088E1C7294F600709858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewTelegraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculous-innovations.NewTelegraph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		150F088F1C7294F600709858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewTelegraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculous-innovations.NewTelegraph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		150F08911C7294F600709858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewTelegraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculous-innovations.NewTelegraphTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewTelegraph.app/NewTelegraph";
+			};
+			name = Debug;
+		};
+		150F08921C7294F600709858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewTelegraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculous-innovations.NewTelegraphTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewTelegraph.app/NewTelegraph";
+			};
+			name = Release;
+		};
+		150F08941C7294F600709858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewTelegraphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculous-innovations.NewTelegraphUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NewTelegraph;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		150F08951C7294F600709858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewTelegraphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculous-innovations.NewTelegraphUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NewTelegraph;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		150F08601C7294F600709858 /* Build configuration list for PBXProject "NewTelegraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150F088B1C7294F600709858 /* Debug */,
+				150F088C1C7294F600709858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		150F088D1C7294F600709858 /* Build configuration list for PBXNativeTarget "NewTelegraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150F088E1C7294F600709858 /* Debug */,
+				150F088F1C7294F600709858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		150F08901C7294F600709858 /* Build configuration list for PBXNativeTarget "NewTelegraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150F08911C7294F600709858 /* Debug */,
+				150F08921C7294F600709858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		150F08931C7294F600709858 /* Build configuration list for PBXNativeTarget "NewTelegraphUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150F08941C7294F600709858 /* Debug */,
+				150F08951C7294F600709858 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 150F085D1C7294F600709858 /* Project object */;
+}
