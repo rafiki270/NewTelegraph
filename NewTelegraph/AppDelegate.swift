@@ -8,14 +8,26 @@
 
 import UIKit
 
+
 @UIApplicationMain
+
+
+// MARK: Application delegate methods
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let mainViewController: MoviesListViewController = MoviesListViewController(nibName: nil, bundle: nil)
+        let nc: UINavigationController = UINavigationController(rootViewController: mainViewController)
+        nc.navigationBarHidden = true
+        
+        window?.rootViewController = nc
+        window?.makeKeyAndVisible()
         return true
     }
 

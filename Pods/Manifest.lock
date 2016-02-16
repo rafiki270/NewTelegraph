@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (3.2.0)
+  - Nimble (3.0.0)
+  - Quick (0.9.1)
+  - SnapKit (0.19.1)
+  - SwiftLoader (0.2.5)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.2.0)
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.9.0)
+  - SnapKit
+  - SwiftLoader
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
+  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
+  SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.38.2

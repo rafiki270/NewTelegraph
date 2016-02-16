@@ -1,0 +1,6 @@
+framework module Pods_NewTelegraph {
+  umbrella header "Pods-NewTelegraph-umbrella.h"
+
+  export *
+  module * { export * }
+}
