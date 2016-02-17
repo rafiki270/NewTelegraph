@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2FB8BF3DC7C6676F833C0B6"
-               BuildableName = "SwiftLoader.framework"
-               BlueprintName = "SwiftLoader"
+               BlueprintIdentifier = "D9926F4001EDD3D0F9DB74A2"
+               BuildableName = "SwiftSpinner.framework"
+               BlueprintName = "SwiftSpinner"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

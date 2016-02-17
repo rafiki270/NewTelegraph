@@ -24,7 +24,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let mainViewController: MoviesListViewController = MoviesListViewController(nibName: nil, bundle: nil)
         let nc: UINavigationController = UINavigationController(rootViewController: mainViewController)
-        nc.navigationBarHidden = true
+        
+        // Setting up styles
+        Config.configureGlobalInterface()
+        
+        // Hiding nav bar on an iPad
+        switch UIDevice.currentDevice().userInterfaceIdiom {
+        case .Pad:
+            nc.navigationBarHidden = true
+            break
+        default:
+            break
+        }
         
         window?.rootViewController = nc
         window?.makeKeyAndVisible()

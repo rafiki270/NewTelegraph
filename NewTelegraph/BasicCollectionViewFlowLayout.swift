@@ -18,7 +18,6 @@ class BasicCollectionViewFlowLayout : UICollectionViewFlowLayout {
         super.init()
         
         self.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        self.itemSize = CGSize(width: 90, height: 120)
     }
 
     required init?(coder aDecoder: NSCoder) {

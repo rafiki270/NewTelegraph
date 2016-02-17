@@ -22,8 +22,6 @@
 		150F08AC1C7298A400709858 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08AA1C7298A400709858 /* BasicView.swift */; };
 		150F08AF1C7298C000709858 /* MoviesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08AE1C7298C000709858 /* MoviesListDataSource.swift */; };
 		150F08B01C7298C000709858 /* MoviesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08AE1C7298C000709858 /* MoviesListDataSource.swift */; };
-		150F08B21C7298CB00709858 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08B11C7298CB00709858 /* Config.swift */; };
-		150F08B31C7298CB00709858 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08B11C7298CB00709858 /* Config.swift */; };
 		150F08B51C7298E400709858 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08B41C7298E400709858 /* Lang.swift */; };
 		150F08B61C7298E400709858 /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08B41C7298E400709858 /* Lang.swift */; };
 		150F08BB1C72998F00709858 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 150F08B91C72998F00709858 /* data.json */; };
@@ -44,6 +42,12 @@
 		150F08DD1C73B77D00709858 /* MoviesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08DC1C73B77D00709858 /* MoviesCollectionView.swift */; };
 		150F08E01C73C89A00709858 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08DF1C73C89A00709858 /* MovieCollectionViewCell.swift */; };
 		150F08E11C73C89A00709858 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08DF1C73C89A00709858 /* MovieCollectionViewCell.swift */; };
+		15EF82FE1C73E7FF00DCD94E /* MoviesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08DC1C73B77D00709858 /* MoviesCollectionView.swift */; };
+		15EF83001C73F9F000DCD94E /* MoviesListDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EF82FF1C73F9F000DCD94E /* MoviesListDataSourceTests.swift */; };
+		15EF83021C73FE8000DCD94E /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EF83011C73FE8000DCD94E /* BasicCollectionViewCell.swift */; };
+		15EF83031C73FEC600DCD94E /* BasicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EF83011C73FE8000DCD94E /* BasicCollectionViewCell.swift */; };
+		15EF83061C7415AB00DCD94E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08B11C7298CB00709858 /* Config.swift */; };
+		15EF83071C7415AC00DCD94E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F08B11C7298CB00709858 /* Config.swift */; };
 		659A9DBF94889F105F19F872 /* Pods_NewTelegraphTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7DD9476B525E392F238A13 /* Pods_NewTelegraphTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7D3C8400537CEFB5F006C8F1 /* Pods_NewTelegraphUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115C3449D2DF2D4A9E5D64B6 /* Pods_NewTelegraphUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BF566911EA9D0E112CA5A6F4 /* Pods_NewTelegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680C355DD1B7D67E925880E1 /* Pods_NewTelegraph.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -96,6 +100,9 @@
 		150F08D81C73A42F00709858 /* BasicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		150F08DC1C73B77D00709858 /* MoviesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesCollectionView.swift; sourceTree = "<group>"; };
 		150F08DF1C73C89A00709858 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		15EF82FF1C73F9F000DCD94E /* MoviesListDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesListDataSourceTests.swift; sourceTree = "<group>"; };
+		15EF83011C73FE8000DCD94E /* BasicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewCell.swift; sourceTree = "<group>"; };
+		15EF83041C7413DA00DCD94E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22D5AD9AB5F8C365C986A8C5 /* Pods-NewTelegraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTelegraph.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewTelegraph/Pods-NewTelegraph.release.xcconfig"; sourceTree = "<group>"; };
 		44E0E129EB9B8AB647281243 /* Pods-NewTelegraphUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewTelegraphUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewTelegraphUITests/Pods-NewTelegraphUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		680C355DD1B7D67E925880E1 /* Pods_NewTelegraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewTelegraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +143,7 @@
 		150F085C1C7294F600709858 = {
 			isa = PBXGroup;
 			children = (
+				15EF83041C7413DA00DCD94E /* README.md */,
 				150F08671C7294F600709858 /* NewTelegraph */,
 				150F087C1C7294F600709858 /* NewTelegraphTests */,
 				150F08871C7294F600709858 /* NewTelegraphUITests */,
@@ -173,6 +181,7 @@
 		150F087C1C7294F600709858 /* NewTelegraphTests */ = {
 			isa = PBXGroup;
 			children = (
+				15EF82FF1C73F9F000DCD94E /* MoviesListDataSourceTests.swift */,
 				150F087D1C7294F600709858 /* NewTelegraphTests.swift */,
 				150F08B71C72995F00709858 /* Supporting files */,
 			);
@@ -275,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				150F08AA1C7298A400709858 /* BasicView.swift */,
+				15EF83011C73FE8000DCD94E /* BasicCollectionViewCell.swift */,
 			);
 			name = Basic;
 			sourceTree = "<group>";
@@ -600,13 +610,14 @@
 				150F08AF1C7298C000709858 /* MoviesListDataSource.swift in Sources */,
 				150F08D91C73A42F00709858 /* BasicCollectionViewFlowLayout.swift in Sources */,
 				150F086B1C7294F600709858 /* MoviesListViewController.swift in Sources */,
-				150F08B21C7298CB00709858 /* Config.swift in Sources */,
 				150F08AB1C7298A400709858 /* BasicView.swift in Sources */,
 				150F08D11C739AFF00709858 /* TelegraphData.swift in Sources */,
 				150F08CF1C739AFF00709858 /* Author.swift in Sources */,
+				15EF83021C73FE8000DCD94E /* BasicCollectionViewCell.swift in Sources */,
 				150F08B51C7298E400709858 /* Lang.swift in Sources */,
 				150F08691C7294F600709858 /* AppDelegate.swift in Sources */,
 				150F08D01C739AFF00709858 /* Collection.swift in Sources */,
+				15EF83061C7415AB00DCD94E /* Config.swift in Sources */,
 				150F08D21C739AFF00709858 /* Genre.swift in Sources */,
 				150F08CE1C739AFF00709858 /* Actors.swift in Sources */,
 				150F08BD1C736CD400709858 /* BasicViewController.swift in Sources */,
@@ -624,17 +635,20 @@
 				150F08DA1C73A42F00709858 /* BasicCollectionViewFlowLayout.swift in Sources */,
 				150F08B01C7298C000709858 /* MoviesListDataSource.swift in Sources */,
 				150F08A31C72986200709858 /* MoviesListViewController.swift in Sources */,
-				150F08B31C7298CB00709858 /* Config.swift in Sources */,
 				150F08D61C739B0000709858 /* TelegraphData.swift in Sources */,
 				150F08D41C739B0000709858 /* Author.swift in Sources */,
 				150F087E1C7294F600709858 /* NewTelegraphTests.swift in Sources */,
 				150F08B61C7298E400709858 /* Lang.swift in Sources */,
 				150F08D51C739B0000709858 /* Collection.swift in Sources */,
+				15EF83001C73F9F000DCD94E /* MoviesListDataSourceTests.swift in Sources */,
 				150F08D71C739B0000709858 /* Genre.swift in Sources */,
+				15EF83071C7415AC00DCD94E /* Config.swift in Sources */,
 				150F08D31C739B0000709858 /* Actors.swift in Sources */,
+				15EF83031C73FEC600DCD94E /* BasicCollectionViewCell.swift in Sources */,
 				150F08E11C73C89A00709858 /* MovieCollectionViewCell.swift in Sources */,
 				150F08BE1C736CD400709858 /* BasicViewController.swift in Sources */,
 				150F08A41C72986200709858 /* MovieDetailViewController.swift in Sources */,
+				15EF82FE1C73E7FF00DCD94E /* MoviesCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

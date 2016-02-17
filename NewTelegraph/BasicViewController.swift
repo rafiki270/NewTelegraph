@@ -21,7 +21,8 @@ class BasicViewController : UIViewController {
     // MARK: Configuration
     
     func configure() {
-        self.view.backgroundColor = UIColor.redColor()
+        self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor.whiteColor()
     }
     
     // MARK: Creating elements
@@ -41,7 +42,12 @@ class BasicViewController : UIViewController {
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+            return .LightContent
+        }
+        else {
+            return .Default
+        }
     }
     
     // MARK: Memory management

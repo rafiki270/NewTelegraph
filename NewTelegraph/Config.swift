@@ -6,11 +6,28 @@
 //  Copyright © 2016 Ridiculous Innovations. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 class Config : NSObject {
     
     internal static let apiUrl: String = "http://s.telegraph.co.uk/tmgmobilepub/articles.json"
+    
+    
+    // MARK: Styles
+    
+    internal static func configureGlobalInterface() {
+        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+            UIApplication.sharedApplication().statusBarStyle = .LightContent
+        }
+        else {
+            UIApplication.sharedApplication().statusBarStyle = .Default
+        }
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSFontAttributeName: UIFont(name: "TimesNewRomanPS-BoldMT", size: 28)!,
+            NSForegroundColorAttributeName: UIColor.whiteColor()
+        ]
+    }
     
 }

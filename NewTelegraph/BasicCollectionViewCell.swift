@@ -1,15 +1,15 @@
 //
-//  MoviesCollectionView.swift
+//  BasicCollectionViewCell.swift
 //  NewTelegraph
 //
-//  Created by Ondrej Rafaj on 16/02/2016.
+//  Created by Ondrej Rafaj on 17/02/2016.
 //  Copyright © 2016 Ridiculous Innovations. All rights reserved.
 //
 
 import UIKit
 
 
-class MoviesCollectionView : UICollectionView {
+class BasicCollectionViewCell : UICollectionViewCell {
     
     
     // MARK: Layout
@@ -30,14 +30,11 @@ class MoviesCollectionView : UICollectionView {
         self.init(frame:CGRect.zero)
     }
     
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: layout)
+    override init (frame: CGRect) {
+        super.init(frame: frame)
         
         self.addSubviews()
         self.layoutSubviews()
-        
-        self.registerClass(MovieCollectionViewCell.self, forCellWithReuseIdentifier: MoviesListDataSource.movieCellIdentifier)
-        self.backgroundColor = UIColor.clearColor()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -46,5 +43,3 @@ class MoviesCollectionView : UICollectionView {
     
     
 }
-
-

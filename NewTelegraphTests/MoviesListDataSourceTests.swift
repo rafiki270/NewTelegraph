@@ -1,8 +1,8 @@
 //
-//  NewTelegraphTests.swift
-//  NewTelegraphTests
+//  MoviesListDataSourceTests.swift
+//  NewTelegraph
 //
-//  Created by Ondrej Rafaj on 15/02/2016.
+//  Created by Ondrej Rafaj on 17/02/2016.
 //  Copyright © 2016 Ridiculous Innovations. All rights reserved.
 //
 
@@ -10,7 +10,8 @@ import XCTest
 
 @testable import NewTelegraph
 
-class NewTelegraphTests: XCTestCase {
+class MoviesListDataSourceTests: XCTestCase {
+    
     
     override func setUp() {
         super.setUp()

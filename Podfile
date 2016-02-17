@@ -3,10 +3,10 @@ platform :ios, '9.2'
 use_frameworks!
 inhibit_all_warnings!
 target 'NewTelegraph', :exclusive => true do
-    pod 'SnapKit'
+    pod 'SnapKit', '~> 0.19.1'
     pod 'Alamofire', '~> 3.2.0'
-    pod 'SwiftyJSON'
-    pod 'SwiftLoader'
+    pod 'SwiftyJSON', '~> 2.3.2'
+    pod 'SwiftSpinner', '~> 0.8.0'
 end
 
 

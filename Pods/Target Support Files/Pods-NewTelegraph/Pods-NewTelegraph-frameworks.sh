@@ -54,12 +54,12 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-NewTelegraph/Alamofire.framework'
   install_framework 'Pods-NewTelegraph/SnapKit.framework'
-  install_framework 'Pods-NewTelegraph/SwiftLoader.framework'
+  install_framework 'Pods-NewTelegraph/SwiftSpinner.framework'
   install_framework 'Pods-NewTelegraph/SwiftyJSON.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-NewTelegraph/Alamofire.framework'
   install_framework 'Pods-NewTelegraph/SnapKit.framework'
-  install_framework 'Pods-NewTelegraph/SwiftLoader.framework'
+  install_framework 'Pods-NewTelegraph/SwiftSpinner.framework'
   install_framework 'Pods-NewTelegraph/SwiftyJSON.framework'
 fi

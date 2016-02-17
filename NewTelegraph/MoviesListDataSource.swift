@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 
 class MoviesListDataSource : NSObject, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -14,9 +15,33 @@ class MoviesListDataSource : NSObject, UICollectionViewDelegateFlowLayout, UICol
     
     static let movieCellIdentifier: String = "MovieCollectionViewCellIdentifier"
     
+    private var data: TelegraphData? = nil
     
-    internal func loadData() {
-        
+    
+    // MARK: Data handling
+    
+    
+    internal func loadData(completion: ((error: NSError?) -> Void)!) {
+        // TODO: Move following to a separate "networking" file
+        Alamofire.request(.GET, Config.apiUrl)
+            .responseJSON { response in
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                    
+                    self.data = TelegraphData.init(object: JSON)
+                    completion(error: nil)
+                }
+                else {
+                    // TODO: Improve error reporting
+                    // TODO: Report server errors to the server admin (with request details)
+                    let err: NSError = NSError.init(domain: "com.orafaj.newtelegraph", code: 666, userInfo: [NSLocalizedDescriptionKey: "Evil loading error"])
+                    completion(error: err)
+                }
+        }
+    }
+    
+    internal func collectionForIndexPath(indexPath: NSIndexPath) -> Collection {
+        return (self.data?.collection?[indexPath.row])! as Collection;
     }
     
     // MARK: Collection view datasource methods
@@ -26,12 +51,16 @@ class MoviesListDataSource : NSObject, UICollectionViewDelegateFlowLayout, UICol
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        // TODO: This could be better protected by checking teh variables are valid
+        return (self.data?.collection?.count)!
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(MoviesListDataSource.movieCellIdentifier, forIndexPath: indexPath)
-        cell.backgroundColor = UIColor.orangeColor()
+        let cell: MovieCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(MoviesListDataSource.movieCellIdentifier, forIndexPath: indexPath) as! MovieCollectionViewCell
+        
+        let collection: Collection = self.collectionForIndexPath(indexPath)
+        cell.collection = collection
+        
         return cell
     }
     
