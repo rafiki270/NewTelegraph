@@ -32,8 +32,8 @@ public class Collection: NSObject, NSCoding {
 
 
     // MARK: Properties
-	public var actors: [Actors]?
-	public var genre: [Genre]?
+	public var actors: [String]?
+	public var genre: [String]?
 	public var websiteUrl: String?
 	public var publishedDate: String?
 	public var articleBody: String?
@@ -69,7 +69,7 @@ public class Collection: NSObject, NSCoding {
 		actors = []
 		if let items = json[kCollectionActorsKey].array {
 			for item in items {
-				actors?.append(Actors(json: item))
+				actors?.append(String(item))
 			}
 		} else {
 			actors = nil
@@ -77,7 +77,7 @@ public class Collection: NSObject, NSCoding {
 		genre = []
 		if let items = json[kCollectionGenreKey].array {
 			for item in items {
-				genre?.append(Genre(json: item))
+				genre?.append(String(item))
 			}
 		} else {
 			genre = nil
@@ -108,14 +108,14 @@ public class Collection: NSObject, NSCoding {
 		if actors?.count > 0 {
 			var temp: [AnyObject] = []
 			for item in actors! {
-				temp.append(item.dictionaryRepresentation())
+				temp.append(item)
 			}
 			dictionary.updateValue(temp, forKey: kCollectionActorsKey)
 		}
 		if genre?.count > 0 {
 			var temp: [AnyObject] = []
 			for item in genre! {
-				temp.append(item.dictionaryRepresentation())
+				temp.append(item)
 			}
 			dictionary.updateValue(temp, forKey: kCollectionGenreKey)
 		}
@@ -167,8 +167,8 @@ public class Collection: NSObject, NSCoding {
 
     // MARK: NSCoding Protocol
     required public init(coder aDecoder: NSCoder) {
-		self.actors = aDecoder.decodeObjectForKey(kCollectionActorsKey) as? [Actors]
-		self.genre = aDecoder.decodeObjectForKey(kCollectionGenreKey) as? [Genre]
+		self.actors = aDecoder.decodeObjectForKey(kCollectionActorsKey) as? [String]
+		self.genre = aDecoder.decodeObjectForKey(kCollectionGenreKey) as? [String]
 		self.websiteUrl = aDecoder.decodeObjectForKey(kCollectionWebsiteUrlKey) as? String
 		self.publishedDate = aDecoder.decodeObjectForKey(kCollectionPublishedDateKey) as? String
 		self.articleBody = aDecoder.decodeObjectForKey(kCollectionArticleBodyKey) as? String

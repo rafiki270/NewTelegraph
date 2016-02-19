@@ -28,6 +28,8 @@ class Config : NSObject {
             NSFontAttributeName: UIFont(name: "TimesNewRomanPS-BoldMT", size: 28)!,
             NSForegroundColorAttributeName: UIColor.whiteColor()
         ]
+        
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
     }
     
 }

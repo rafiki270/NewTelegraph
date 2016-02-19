@@ -11,6 +11,8 @@ import UIKit
 
 class BasicViewController : UIViewController {
     
+    var currentDevice: UIDevice = UIDevice.currentDevice()
+    
     
     // MARK: Layout
     
@@ -42,19 +44,12 @@ class BasicViewController : UIViewController {
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+        if currentDevice.userInterfaceIdiom == .Phone {
             return .LightContent
         }
         else {
             return .Default
         }
     }
-    
-    // MARK: Memory management
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
+        
 }

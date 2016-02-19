@@ -31,8 +31,18 @@ class MovieCollectionViewCell : BasicCollectionViewCell {
     
     // MARK: Loading data into cell interface
     
+    private func setupAccesibility() {
+        self.isAccessibilityElement = true
+        
+        self.accessibilityLabel = data?.headline
+        self.accessibilityHint = Lang.get((data?.descriptionValue)! + ", doubletap to open")
+        
+        titleLabel.accessibilityElementsHidden = true
+    }
+    
     private func loadDataIntoInterface() {
         titleLabel.text = data?.headline?.uppercaseString
+        
         let urlString: String? = data?.pictureUrl
         if urlString != nil {
             Alamofire.request(.GET, urlString!.stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())!)
@@ -51,6 +61,8 @@ class MovieCollectionViewCell : BasicCollectionViewCell {
                     }
             }
         }
+        
+        self.setupAccesibility()
     }
     
     // MARK: Layout
@@ -65,12 +77,14 @@ class MovieCollectionViewCell : BasicCollectionViewCell {
         
         // Title layout
         self.titleLabel.snp_makeConstraints { (make) -> Void in
-            make.left.right.equalTo(self)
-            make.bottom.equalTo(self.snp_bottom);
+            make.left.equalTo(self).offset(20)
+            make.right.equalTo(self).offset(-20)
+            make.bottom.equalTo(self.snp_bottom)
             make.height.equalTo(50)
         }
         self.titleLabelBackground.snp_makeConstraints { (make) -> Void in
-            make.edges.equalTo(self.titleLabel)
+            make.top.bottom.equalTo(self.titleLabel)
+            make.left.right.equalTo(self)
         }
     }
     
@@ -91,7 +105,7 @@ class MovieCollectionViewCell : BasicCollectionViewCell {
         titleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: fontSize)
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.backgroundColor = UIColor.clearColor()
-        titleLabel.textAlignment = .Center
+        titleLabel.textAlignment = .Left
         self.addSubview(titleLabel)
     }
     

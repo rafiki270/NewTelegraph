@@ -13,12 +13,11 @@ import SwiftSpinner
 
 class MoviesListViewController: BasicViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    private var collectionView : MoviesCollectionView!
-    private var layout: BasicCollectionViewFlowLayout = BasicCollectionViewFlowLayout()
+    internal var collectionView : MoviesCollectionView!
+    internal var layout: BasicCollectionViewFlowLayout = BasicCollectionViewFlowLayout()
+    internal let dataSource: MoviesListDataSource = MoviesListDataSource()
     
-    let dataSource: MoviesListDataSource = MoviesListDataSource()
-    
-    private var firstLoad: Bool = true
+    internal var firstLoad: Bool = true
     
 
     // MARK: Layout
@@ -34,7 +33,7 @@ class MoviesListViewController: BasicViewController, UICollectionViewDelegate, U
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         
-        // I was originally planning on adding layout for all platforms but have been unable to do so in the time given
+        // TODO: I was originally planning on adding layout for all platforms but have been unable to do so in the time given
         
         self.collectionView.reloadItemsAtIndexPaths(self.collectionView.indexPathsForVisibleItems())
     }
@@ -49,7 +48,7 @@ class MoviesListViewController: BasicViewController, UICollectionViewDelegate, U
     
     // MARK: Data management
     
-    private func reloadData() {
+    func reloadData() {
         SwiftSpinner.show(Lang.get("Connecting to our spy satellite ..."))
         
         dataSource.loadData { (error: NSError?) -> Void in
@@ -71,7 +70,7 @@ class MoviesListViewController: BasicViewController, UICollectionViewDelegate, U
     
     // MARK: Creating elements
     
-    private func createCollectionView() {
+    internal func createCollectionView() {
         collectionView = MoviesCollectionView(frame: CGRectZero, collectionViewLayout: layout)
         collectionView.delegate = self
         self.view.addSubview(collectionView)
@@ -103,6 +102,8 @@ class MoviesListViewController: BasicViewController, UICollectionViewDelegate, U
         detail.collection = dataSource.collectionForIndexPath(indexPath)
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
             let nc: UINavigationController = UINavigationController(rootViewController: detail)
+            nc.navigationBar.translucent = false
+            nc.modalPresentationStyle = .FormSheet
             self.presentViewController(nc, animated: true, completion: nil)
         }
         else {

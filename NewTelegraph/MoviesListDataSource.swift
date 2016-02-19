@@ -20,7 +20,6 @@ class MoviesListDataSource : NSObject, UICollectionViewDelegateFlowLayout, UICol
     
     // MARK: Data handling
     
-    
     internal func loadData(completion: ((error: NSError?) -> Void)!) {
         // TODO: Move following to a separate "networking" file
         Alamofire.request(.GET, Config.apiUrl)
