@@ -31,7 +31,7 @@ Optionally you can ```pod install`` to update pods
 
 #### Thank you
 
-Thank you for your consideration, shall you have any questions regarding my implementation or shall you require any additional assurances/presentation of my skills please do not hesitate to contact me via my recruiter Avinash (Avinash.Mahandru@MortimerSpinks.com)
+Thank you for your consideration, shall you have any questions regarding my implementation or shall you require any additional assurances/presentation of my skills please do not hesitate to contact me via my agent at MortimerSpinks.com
 
 Looking forward to speaking to you soon!
 
