@@ -7,7 +7,7 @@ Test application for The Telegraph group
 * git clone git@github.com:rafiki270/NewTelegraph.git
 * build and run the project
 
-Optionally you can ```pod install`` to update pods
+Optionally you can ```pod install``` to update pods
 
 #### Third party libraries used
 
